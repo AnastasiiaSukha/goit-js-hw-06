@@ -5,9 +5,10 @@ const colorName = document.querySelector('span.color');
 btnChangeColor.addEventListener('click', onColorChange);
 
 function onColorChange() {
+  const color = getRandomHexColor();
 
-  document.body.style.backgroundColor = getRandomHexColor();
-  colorName.textContent = getRandomHexColor();
+  document.body.style.backgroundColor = color;
+  colorName.textContent = color;
 };
  
 function getRandomHexColor() {

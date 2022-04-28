@@ -17,7 +17,7 @@ function onFormSubmit(event) {
     };
 
     if (email === '' || password === '') {
-        alert('Please, fill out empty fields');
+       return alert('Please, fill out empty fields');
     }
     
     console.log(dataForm);

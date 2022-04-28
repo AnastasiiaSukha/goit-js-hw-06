@@ -10,8 +10,13 @@ function onBorderColorChange(event) {
     console.log(parseInt(inputLength));
     if (event.currentTarget.value.trim().length === parseInt(inputLength)) {
         inputEl.classList.add('valid');
+        inputEl.classList.remove('invalid');
     }
-    else inputEl.classList.add('invalid');
+    else {
+        inputEl.classList.add('invalid');
+        inputEl.classList.remove('valid');
+    
+    };
     
     };
        
